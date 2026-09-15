@@ -30,7 +30,7 @@
 | 仓库 | 角色 | 证据来源 |
 |---|---|---|
 | `yuanli-strategy-soul` | **T1 Normative Truth / CANON_AUTHORITY**。`CONSTITUTION v1.2｜2026-08-07`。承载 governance contracts、receipts、Estate Registry、三部曲世界观契约、《地心新说》书稿 | Notion `原力OS` 页 Canon URI；`yuanli-strategy-trilogy` README；YOS-BRAIN Atlas 的 Machine Truth Pointers |
-| `yuanli-os-starter` | `os-yuanli-share-max` 的**指定继任仓** | `os-yuanli-share-max` README 归档块 |
+| `yuanli-os-starter` | `os-yuanli-share-max` 的**指定继任仓**，同时是 skill 的规范命名空间根（`zk:skills:yuanli-os-starter/<skill>`） | `os-yuanli-share-max` README 归档块；`recursive-capability-architect/governance/identity.json` 的 `legacy_canonical_ids` |
 | `LLM-Wiki` | T2 Semantic Truth 的 committed history projection（本地 OB 为 live master） | YOS-BRAIN Atlas |
 | `quant-workspace` | **当前 A9 operational canon** / Reference Quant Runtime | `yuanli-invest` README |
 | `yuanli-invest-rsi` | Capability Challenger Lane，状态 **FROZEN** | `yuanli-invest` README |
@@ -41,6 +41,7 @@
 
 ```
 CONSTITUTION.md
+docs/YUANLI-STRATEGY-CANON-INDEX.md        # 跨域裁决 + 双友好验收标准（机器友好/人类友好两把尺）
 docs/worldview/YUANLI-TRILOGY-GREEN-PAPER-v0.1.md
 docs/YUANLI-LIFE-STRATEGY-BOUNDARY-v1.md
 docs/governance/YOS-BRAIN-E{0,1,2}-REPORT.md
@@ -153,7 +154,7 @@ Mechanism    生成     × 选择     × 继承/进化
 | 仓库 | 状态 | 说明 |
 |---|---|---|
 | `os-yuanli-share-max` | **ARCHIVED 2026-07-27** | kernel + 6 profile + 9 卫星 skill。继任 `yuanli-os-starter`。详见 `02-agent-kernel-os-yuanli.md` |
-| `os-yuanli-info-5l` | **ARCHIVED 2026-07-27** | 信息 5 层 / 炼丹 skill — 让讨论跃迁到洞察层，把洞察固化成框架 |
+| `os-yuanli-info-5l` | **ARCHIVED 2026-07-27**，继任 `yuanli-strategy-trilogy` | 信息 5 层 / 炼丹 skill — 让讨论跃迁到洞察层，把洞察固化成框架。**完整层级定义、跃迁提问、L4/L5 验真清单见 `04-method-stack.md` 第 2 节**（这份内容值得单独记住，它是整个方法论堆栈的信息提纯机制） |
 | `clone-alpha` | 活跃度低（2026-03） | 原力OS 克隆体 Alpha，多机部署实验。含 clone-state 心跳/评分/晋升策略、5 个 workflow、飞书 bridge |
 | `yuan-li-os-clone-01` | **ARCHIVED** | 克隆体实验第一版 |
 | `yuanli-os-quickstart` | 2026-07-09 | 面向企业家的 docsify 上手站。四句话定位："记住 / 回答（带出处）/ 发现 / 增值" |
@@ -181,7 +182,38 @@ Mechanism    生成     × 选择     × 继承/进化
 
 **跨仓库共享构件**（这是这批 skill 真正的复用内核）：
 质量门 / rubric 评分 / 管线阶段划分 / `N=1`·`N=3` 证据标注惯例 / 失真与防失真护栏 / 洞察层跃迁判据。
-这些构件与 `os-yuanli` 的 `audit-rubric`（6 轴 × 5 检查点）和策略层次阶梯（数据→特征→观点→洞察→全局最优）是同源的。
+完整的门谱系、护栏清单和 N 值约定见 `04-method-stack.md` 第 6 节。
+
+#### 依赖关系（谁在谁之后跑）
+
+```
+[私有正典]  yuanli-strategy-soul ─── docs/YUANLI-STRATEGY-CANON-INDEX.md
+                    │                        │
+   os-yuanli-info-5l ┤                        ▼
+   （L4 洞察闸）      ▼                cbm-osa-ipo-map-kit
+          osa-strategy-card-distiller   （v2 机器合同 + 唯一评分引擎）
+                    │
+   high-info-density-dashboard-designer  ◄── 母 skill / 12 维元方法
+        ┌───────────┼────────────┐
+        ▼           ▼            ▼
+   mckinsey-    cascading-   hybrid-expert-
+   report       causal       brain-strategy
+        └───────────┴────────────┘
+                    ▼
+      ip-company-strategy-cockpit  ◄── 场景编排器（七步，另委派 yuanli-research-max
+                    │                    与 yuanli-os-company-brain 三圈治理）
+                    ▼
+      embedded-strategy-brain      ◄── 收尾：静态 HTML → 活问答
+
+   recursive-capability-architect  ◄── 横切：任何 recurring 能力的 PVI 治理
+   ai-risk-value-proof             ◄── 应用：三部曲 A/B/C 三轴 + 四模块落地实例
+   liu-chenming-strategy-framework ◄── 独立支线，不接原力内核
+```
+
+**两个容易混淆的分工**：
+
+- `osa-strategy-card-distiller` 是**人工 + heuristic 的萃取工作流**（七门 + 六段管道 + prompt 模板，给 Claude Agent 用）；`cbm-osa-ipo-map-kit` 是**工程侧的正式 v2 合同 + 唯一评分引擎 + 地图渲染**（schema-hash 锁定，机器可验证）。共享 OSA/CBM 词汇，但引擎侧才是裁决方。
+- `high-info-density-dashboard-designer` 是母 skill（元方法），`mckinsey-report` / `cascading-causal` / `hybrid-expert-brain` 是同一密度哲学在不同载体上的分化，都声明它为 parent。改密度标准要改母 skill，不要在下游各改一遍。
 
 ### 5.3 数据 / 逆向 / 交付类
 
@@ -190,6 +222,8 @@ Mechanism    生成     × 选择     × 继承/进化
 ### 5.4 前置 / 意图层
 
 `qiqiao-linglong`（七窍玲珑 — 意图探求与收敛的前置追问层，最少提问榨干意图，镜像主人隐性方法而非通用套路）
+
+硬约束是 **最多 3 轮提问，越过即违约**；招牌是**法窍**（从"最满意的一次成功样本"反解隐性方法）与 **Step 3 强制意会回放**（念回意图规格、确认后才产出）。它与 `intent-grounding` 不重叠：后者压缩成 objective，前者探求暗线。完整流程见 `04-method-stack.md` 第 5 节。
 
 ### 5.5 内容 / 渠道 / 飞书类
 
@@ -211,7 +245,7 @@ Mechanism    生成     × 选择     × 继承/进化
 
 ```
 os-yuanli-share-max              → yuanli-os-starter
-os-yuanli-info-5l
+os-yuanli-info-5l                → yuanli-strategy-trilogy
 yuanli-os-greenbook
 yuanli-os-company-brain-skill
 yuanli-os-dashboard
@@ -246,12 +280,12 @@ os-gd-yufo-vip-guide
 ### 当前的结构性风险
 
 1. **单点法权集中在私有单仓。** `yuanli-strategy-soul` 同时承载宪法、governance contracts、receipts、三部曲世界观、《地心新说》书稿、project 工作区。PR 已到 #788。风险不是丢失（git 有历史），而是**语义拥挤**——一个仓里混了 Canon、Contract、Receipt、Book、Project 五类对象，未来的边界审计成本会持续上升。
-2. **两套战略语法并存尚未 crosswalk。** 详见 `02-agent-kernel-os-yuanli.md` 第 8 节：`os-yuanli` 的五级策略阶梯 vs C3 的 CBM 六原语。YPORT4-G0 已明令"不得另造平行战略语法"，但公开 skill 生态里大量仓库仍在用五级阶梯 + 12 维 rubric。
+2. **战略语法的 crosswalk 已存在，但没有被引用到。** `cbm-osa-ipo-map-kit/methodology/unified-information-engine-v4.md` 已经把五级阶梯定位为 IPO 底座的 P 层，能力栈是 `IPO 信息力 → OSA 策略力 → CBM 统筹力`，与 CBM 六原语是分层堆叠而非平行语法（详见 `04-method-stack.md` 第 1 节）。真正的风险是**这条 crosswalk 只写在一个公开工具仓的 methodology 目录里**，Notion 侧的 YPORT4-G0 与 YOS-BRAIN 都没有引用它，导致读 Notion 的 agent 会误判成语法冲突。同时 v4 已裁决取代 v1 的"OSA = 三个 IPO"解释，但旧解释可能仍散落在其他仓。
 3. **T2 语义真源可达性是当前最大运行瓶颈。** YOS-BRAIN E0/E1 已经把它标成 `⛔ ACCESS BLOCKED`（MacBook-Pro-M4.local 离线 → OB / NAS / Remote Gateway / 飞书直读全部 fail-closed）。这意味着**最高频的语义查询目前无法走首选权威路径**。
 4. **公开 Agent Skill 生态与私有 Canon 之间没有自动同步。** 41 个原力相关公开仓中约一半已归档，剩下的方法论内容与 Canon v1.2 之间没有 crosswalk 文件。新 agent 读公开仓会得到**已降权的解释**（例如"向内/向外/向上"这类已被裁决为 `HISTORICAL_AXIS_DESCRIPTOR` 的表达）。
 
 ### 三条可执行建议（不含时间估计）
 
 1. **在 Soul 仓建一份 `PUBLIC-REPO-CROSSWALK.md`。** 把 41 个公开原力仓逐个标注 `Keep / Reproject / Demote / Historical`，并标出哪些表述已被 TW1 或 YPORT4-G0 降权。这直接解决风险 4，也是 YPORT4-G1 "Surface Crosswalk" 的自然延伸。
-2. **做一次 `os-yuanli` × CBM 战略语法 crosswalk。** 把五级阶梯明确定位为 `Heat → Battle` 的晋级成熟度判据，而不是独立战略输出格式。解决风险 2 的法权漂移。
+2. **把 `unified-information-engine-v4` 的能力栈提升到 Canon 层并在 Notion 侧引用。** 它是目前唯一一份把 IPO / OSA / CBM / 五级阶梯串成一条链的文件，却只存在于一个公开工具仓。提升后可一次性消除风险 2，并给"OSA = 三个 IPO"旧解释一个明确的降权落点。
 3. **给 Soul 仓做一次对象类边界审计。** 按 YPORT4-G0 的六类一等对象（Identity/Law、Capability、Knowledge/Evidence、Strategy/Portfolio、Runtime/Reality、Learning/Reuse）检查 `docs/` `governance/` `project/` `assets/` 的现有归属，把 Book OS 这类内容工程物与 Canon/Contract 分离。解决风险 1。
