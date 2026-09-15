@@ -1,0 +1,63 @@
+---
+description: 原力 OS 四模块体系（C1-C4）与法权约束。涉及原力OS/原力大脑/CBM/文脉/地图/链路/Estate/复利证明等概念时必读。
+alwaysApply: false
+---
+
+# 原力 OS｜Agent 必读基线
+
+详细版见 `docs/yuanli-os/01-four-module-kernel.md`（四模块内核）与 `docs/yuanli-os/02-agent-kernel-os-yuanli.md`（Agent 方法内核）。
+
+## 四模块（C1–C4）
+
+```
+C1 一纸文脉  Who/Why/Boundary/Authorization  → 输出 CTX（最小必要 Context）
+C2 一个大脑  Evidence/Knowledge/Memory/Evaluation
+C3 一张地图  Policy State，权威本体 = CBM 事业能力操作模型
+C4 一条链路  Work/Action/Outcome/Learning/Reuse
+```
+
+四器官不是四个页面，而是一条闭环：`C1 → C2 → C3 → C4 → LRN → Task2 REUSE → 回流 C2`
+
+层级区分：`原力OS` → `原力大脑（Federated Brain，跨 C1–C4）` → `C2 一个大脑` → `GBrain/Retrieval Projection`。
+**原力大脑 ≠ C2 一个大脑。**
+
+## 八段主链
+
+```
+CTX → EVD → DEC → WPK → ACT → OUT → LRN → Reuse
+```
+
+防伪：`DEC ≠ 建议列表`、`WPK ≠ ACT`、`ACT ≠ OUT`、`OUT ≠ Attribution`、`LRN ≠ REUSE`、`REUSE ≠ Compounding`。
+
+## 不等号（任何声明先过这道筛子）
+
+```
+Retrieved ≠ True          Remembered ≠ Relevant     Generated ≠ Authorized
+Completed ≠ Outcome       Benchmark PASS ≠ Reality PROVEN
+Stored Learning ≠ Reuse   Second-task Reuse ≠ System-level Compounding
+Editability / Freshness / Retrieval / Generation ≠ Authority
+```
+
+## 法权（不可违反）
+
+- **GitHub `moonstachain/yuanli-strategy-soul`（私有）= Canon Authority**，当前 `CONSTITUTION v1.2｜2026-08-07`。
+- Notion `Yuanli Portal` = Human Projection，**不是 Truth**；Website = Public Projection。
+- 五类真源：`T1 GitHub Soul（规范）/ T2 本地 OB LLM-Wiki（语义）/ T3 飞书（组织工作）/ T4 Supabase Runtime（运行现实）/ T5 NAS（原始证据）`。
+- 没有 last-write-wins；没有 projection 自动晋级 Canon；没有 AI 自动确认 Decision / Learning / Reuse。
+- `C1 永远约束 CBM`，不能被 CBM 计算掉。CBM 只有三种合法输出：Route / Prioritize / Frame Tradeoff。
+- 没有 receipt / evidence / human gate，**不允许宣称** PASS、Reality、Learning、Reuse 或 Compounding。
+
+## Agent 工作守则
+
+1. 先判法权，再做检索。任何事实主张先问：属于 T1–T5 哪一类？authority 是谁？freshness 能否证明？
+2. 默认最小充分 Context——多拿一个 Estate 就是非最小。
+3. 不把 Projection 当 Truth；源不可达就 fail-closed 说不可达，不画绿。
+4. 区分 Output / Action / Outcome：我交付文件 ≠ 现实动作发生 ≠ 有效果。
+5. 我只能提 Learning Candidate，不能宣称 Canon 变更或复利成立。
+6. 涉及发布、客户触达、正式知识变更、资金、健康、权限，先做 Authority Check。
+7. 显式列出 Gap 与"这次明确不做什么"。
+
+## 用词纪律
+
+用 `文脉 / 大脑 / 地图 / 链路` 与 `C1–C4` 正典名，不要自创同义词。
+战略输出映射 CBM 六原语：`Component / State / Heat / Battle / Tradeoff / Reality-Reuse`，不另造平行战略语法。
