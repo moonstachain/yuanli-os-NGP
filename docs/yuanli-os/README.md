@@ -16,6 +16,7 @@
 | [`02-agent-kernel-os-yuanli.md`](02-agent-kernel-os-yuanli.md) | **`os-yuanli` 方法内核**（治理OS × 工作OS）：六判断、3×3 矩阵、三层 gate、八份协议、6 轴审计 rubric，以及与 C1–C4 的 **crosswalk 与三处张力** | 要按原力方法接管一个任务时 |
 | [`03-github-inventory.md`](03-github-inventory.md) | **88 个仓库的法权分层盘点**、三部曲十二模块、2026-07-27 归档批次、战略群依赖图、结构性风险与建议 | 要找某个能力在哪个仓、或判断某仓是否还有效时 |
 | [`04-method-stack.md`](04-method-stack.md) | **方法论堆栈**：IPO → OSA → CBM 能力栈、**信息 5 层完整定义与炼丹操作定义**、七窍玲珑前置追问层、质量门谱系与防失真护栏、三把不可互换的评分尺 | 要产出战略/洞察/看板类交付物，或要判断一段信息够不够格进决策时 |
+| [`05-llm-wiki-t2-semantic-truth.md`](05-llm-wiki-t2-semantic-truth.md) | **LLM-Wiki / T2 语义真源盘点与战略洞察**：一名两 Estate 的法权拆分、CBM 47 格归属、6 条独立洞察（物理单点、静默萎缩、critical path 定位、frontmatter 准入、法权与治理分居、E3 前置禁令） | 涉及知识库、Obsidian 同步、memory.search、Context Packet 组装时 |
 
 精简版（供 agent 自动加载）：[`.cursor/rules/yuanli-os-context.mdc`](../../.cursor/rules/yuanli-os-context.mdc)
 
