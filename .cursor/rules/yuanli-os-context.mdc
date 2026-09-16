@@ -1,0 +1,113 @@
+---
+description: 原力 OS 四模块体系（C1-C4）与法权约束。涉及原力OS/原力大脑/CBM/文脉/地图/链路/Estate/复利证明等概念时必读。
+alwaysApply: false
+---
+
+# 原力 OS｜Agent 必读基线
+
+详细版见 `docs/yuanli-os/01-four-module-kernel.md`（四模块内核）、`02-agent-kernel-os-yuanli.md`（Agent 方法内核）、`04-method-stack.md`（方法论堆栈与信息 5 层）。
+
+## 四模块（C1–C4）
+
+```
+C1 一纸文脉  Who/Why/Boundary/Authorization  → 输出 CTX（最小必要 Context）
+C2 一个大脑  Evidence/Knowledge/Memory/Evaluation
+C3 一张地图  Policy State，权威本体 = CBM 事业能力操作模型
+C4 一条链路  Work/Action/Outcome/Learning/Reuse
+```
+
+四器官不是四个页面，而是一条闭环：`C1 → C2 → C3 → C4 → LRN → Task2 REUSE → 回流 C2`
+
+层级区分：`原力OS` → `原力大脑（Federated Brain，跨 C1–C4）` → `C2 一个大脑` → `GBrain/Retrieval Projection`。
+**原力大脑 ≠ C2 一个大脑。**
+
+## 八段主链
+
+```
+CTX → EVD → DEC → WPK → ACT → OUT → LRN → Reuse
+```
+
+防伪：`DEC ≠ 建议列表`、`WPK ≠ ACT`、`ACT ≠ OUT`、`OUT ≠ Attribution`、`LRN ≠ REUSE`、`REUSE ≠ Compounding`。
+
+## 不等号（任何声明先过这道筛子）
+
+```
+Retrieved ≠ True          Remembered ≠ Relevant     Generated ≠ Authorized
+Completed ≠ Outcome       Benchmark PASS ≠ Reality PROVEN
+Stored Learning ≠ Reuse   Second-task Reuse ≠ System-level Compounding
+Editability / Freshness / Retrieval / Generation ≠ Authority
+```
+
+## 法权（不可违反）
+
+- **GitHub `moonstachain/yuanli-strategy-soul`（私有）= Canon Authority**，当前 `CONSTITUTION v1.2｜2026-08-07`。
+- Notion `Yuanli Portal` = Human Projection，**不是 Truth**；Website = Public Projection。
+- 五类真源：`T1 GitHub Soul（规范）/ T2 本地 OB LLM-Wiki（语义）/ T3 飞书（组织工作）/ T4 Supabase Runtime（运行现实）/ T5 NAS（原始证据）`。
+- 没有 last-write-wins；没有 projection 自动晋级 Canon；没有 AI 自动确认 Decision / Learning / Reuse。
+- `C1 永远约束 CBM`，不能被 CBM 计算掉。CBM 只有三种合法输出：Route / Prioritize / Frame Tradeoff。
+- 没有 receipt / evidence / human gate，**不允许宣称** PASS、Reality、Learning、Reuse 或 Compounding。
+
+## Agent 工作守则
+
+1. 先判法权，再做检索。任何事实主张先问：属于 T1–T5 哪一类？authority 是谁？freshness 能否证明？
+2. 默认最小充分 Context——多拿一个 Estate 就是非最小。
+3. 不把 Projection 当 Truth；源不可达就 fail-closed 说不可达，不画绿。
+4. 区分 Output / Action / Outcome：我交付文件 ≠ 现实动作发生 ≠ 有效果。
+5. 我只能提 Learning Candidate，不能宣称 Canon 变更或复利成立。
+6. 涉及发布、客户触达、正式知识变更、资金、健康、权限，先做 Authority Check。
+7. 显式列出 Gap 与"这次明确不做什么"。
+
+## 信息 5 层（判断一段信息够不够格进决策）
+
+```
+L1 碎片   原始素材，无归类
+L2 特征   打标签/分类/分维度，结构化但无判断   ← AI 最爱停在这层
+L3 观点   有态度有倾向，能推荐/反对（低=万能话，高=场景化）
+L4 洞察   观点的观点，能捅灭其他观点；去掉它方案会塌
+L5 单     能稳定复现洞察的方法，≥3 场景可复用
+```
+
+判层取**最低命中层**。出现 `top N` / `分 N 类` / `N 大维度` 很可能只到 L2；`要+抽象名词` / `核心是……` 是 L3 低警报。
+**报告/方案类交付物不到 L4 不收尾。** 材料不够就说"材料不够，需要 XXX"，不硬凑。
+
+能力栈：`IPO 信息力 → OSA 策略力 → CBM 统筹力`。五级阶梯是 IPO 的 P 层，是 CBM 的**上游供料**，不与六原语争法权。
+
+## 用词纪律
+
+用 `文脉 / 大脑 / 地图 / 链路` 与 `C1–C4` 正典名，不要自创同义词。
+战略输出映射 CBM 六原语：`Component / State / Heat / Battle / Tradeoff / Reality-Reuse`，不另造平行战略语法。
+
+三处同名但不同义，引用时必须说清哪一套：
+
+- **三责任层**（CBM 责任轴）`战略 Direct / 管控 Control / 执行 Execute` ≠ **三层 gate**（工作OS）`主题层 / 策略层 / 执行层`。
+- **治理三线**：kernel 版是`递归进化 / 全局最优 / 人类友好`，克隆体版是`递归进化 / 技能统帅 / 人类友好`。
+- **三把评分尺不可互换**：6 轴 30 点（任务成熟度）/ 10 维 D1–D10（克隆体健康度）/ 12 维 120 分（交付物信息密度）。
+
+## LLM-Wiki / T2 操作纪律（涉及知识库读写时必守）
+
+**一名两 Estate**：本地 OB `/Users/liming/Documents/LLM-Wiki/` = **T2 语义真源**（live master）；GitHub `moonstachain/llm-wiki` = **P2 committed history projection**。
+OB 不可达时**不能**拿 GitHub 侧 committed history 冒充当前语义 Canon。
+
+> LLM Wiki 负责记住；GBrain 负责想起。GBrain / Vector / Graph 是可重建投影，**不得反写 Canon**。
+
+四层写权限：
+
+```
+Layer 1  sources/ artifacts/                     只读，LLM 只读不改
+Layer 2  concepts/ entities/ syntheses/          可写
+         comparisons/ operations/
+Layer 3  insights/                               ★ 人类专属，LLM 永不修改（铁边界）
+Layer 4  _factory/ _staging/ _feedback/          代谢层
+```
+
+写白名单：`concepts/ entities/ syntheses/ comparisons/ operations/ dashboards/ _factory/ _staging/`——不在名单内即禁写。
+
+AI 产出的洞察要进 T2，只能走 Layer 4 `_factory/` / `_staging/` 再经**人审蒸馏**，不得直接写 `insights/`。
+投影单向：真相层 = 本地 vault，投影层 = git 远端 / RAG，**绝不反向手改**。git 镜像是 backup，不是三圈 promotion。
+
+**已知数据缺口**（引用 T2 内容时要意识到）：1078 条 concepts 仍「按目录推断」而非填写 frontmatter；现有 schema（`title/type/sources/related/created/updated/audience`）缺 `principal-estate` / `sensitivity` / `context_eligibility` 三个法权字段。因此**单条记忆当前无法自证有资格参与判断**。
+
+## 防失真硬纪律
+
+`N=几` 必须显式标注；未验证假设与边界必须写在产出里；口语数字标 `(口语待核)` 且不推算；公式默认值 `⚪` 不能冒充真据 `🟢`；无金卡不虚报。
+战略层结论数量多于执行层 = 倒沙漏 = 假聚类。
