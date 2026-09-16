@@ -1,0 +1,56 @@
+schema_version: "yuanli-os-ngp-upstream-pin/v1"
+identity: "repo://yuanli/os/ngp"
+state: "clean_mirror_zero_patch"
+
+# yuanli-os-NGP 是可替换的组织级 AI 承载引擎。本文件不授予概念法权、知识法权、
+# 决策授权或投研/交易授权。
+authority:
+  role: "replaceable_org_ai_platform_carrier"
+  knowledge_canon: false
+  decision_authority: false
+  action_authority: false
+  institutional_authority_ref: "github:moonstachain/yuanli-strategy-soul"
+  context_canon_ref: "./SOUL.md"
+  engineering_config_ref: "./platform/CLAUDE.md"
+
+upstream:
+  repo: "github:archestra-ai/archestra"
+  default_branch: "main"
+
+pin:
+  commit: "e3dbdd71485d8b56d44a8aa7a1708a6ccee6003e"
+  commit_date: "2026-05-06T07:32:28+00:00"
+  subject: "ci(contrib): add guptadeepak8 (#4397)"
+  activation_rule: "keep_until_replay_of_load_bearing_patches_passes"
+
+comparison:
+  audited_at: "2026-09-16"
+  upstream_head_commit: "66564a6a83bb65459562bae9c44abac78a2ee14f"
+  upstream_head_date: "2026-09-16T07:58:41+00:00"
+  merge_base: "e3dbdd71485d8b56d44a8aa7a1708a6ccee6003e"
+  relationship: "direct_lineage_behind_upstream"
+  commits_ahead_of_upstream: 0
+  commits_behind_upstream: 2926
+
+# 落在上游路径下的改动必须在此登记：id / 提交 / 是否载重 / 用途。
+# 未登记的上游目录改动视为违规，见 ./AGENTS.md「Fork 纪律」。
+required_patches: []
+
+# 原力治理层产物只放在仓库根，保证升级窗 diff 干净。
+governance_overlay:
+  - "SOUL.md"
+  - "AGENTS.md"
+  - "CLAUDE.md"
+  - ".yuanli/upstream-pin.yaml"
+
+replay_gate:
+  direct_lineage_rule: "候选版本包含 pin.commit 时可直接进入验真"
+  divergent_lineage_rule: "每条载重补丁必须仍存在、已被上游等价实现，或已显式退役"
+  required_before_repin:
+    - "load_bearing_patch_replay"
+    - "pnpm_type_check_pass"
+    - "pnpm_lint_pass"
+    - "pnpm_test_pass"
+    - "drizzle_kit_check_pass_when_schema_touched"
+    - "human_repin_approval"
+  repin_is_automatic: false
