@@ -83,6 +83,30 @@ L5 单     能稳定复现洞察的方法，≥3 场景可复用
 - **治理三线**：kernel 版是`递归进化 / 全局最优 / 人类友好`，克隆体版是`递归进化 / 技能统帅 / 人类友好`。
 - **三把评分尺不可互换**：6 轴 30 点（任务成熟度）/ 10 维 D1–D10（克隆体健康度）/ 12 维 120 分（交付物信息密度）。
 
+## LLM-Wiki / T2 操作纪律（涉及知识库读写时必守）
+
+**一名两 Estate**：本地 OB `/Users/liming/Documents/LLM-Wiki/` = **T2 语义真源**（live master）；GitHub `moonstachain/llm-wiki` = **P2 committed history projection**。
+OB 不可达时**不能**拿 GitHub 侧 committed history 冒充当前语义 Canon。
+
+> LLM Wiki 负责记住；GBrain 负责想起。GBrain / Vector / Graph 是可重建投影，**不得反写 Canon**。
+
+四层写权限：
+
+```
+Layer 1  sources/ artifacts/                     只读，LLM 只读不改
+Layer 2  concepts/ entities/ syntheses/          可写
+         comparisons/ operations/
+Layer 3  insights/                               ★ 人类专属，LLM 永不修改（铁边界）
+Layer 4  _factory/ _staging/ _feedback/          代谢层
+```
+
+写白名单：`concepts/ entities/ syntheses/ comparisons/ operations/ dashboards/ _factory/ _staging/`——不在名单内即禁写。
+
+AI 产出的洞察要进 T2，只能走 Layer 4 `_factory/` / `_staging/` 再经**人审蒸馏**，不得直接写 `insights/`。
+投影单向：真相层 = 本地 vault，投影层 = git 远端 / RAG，**绝不反向手改**。git 镜像是 backup，不是三圈 promotion。
+
+**已知数据缺口**（引用 T2 内容时要意识到）：1078 条 concepts 仍「按目录推断」而非填写 frontmatter；现有 schema（`title/type/sources/related/created/updated/audience`）缺 `principal-estate` / `sensitivity` / `context_eligibility` 三个法权字段。因此**单条记忆当前无法自证有资格参与判断**。
+
 ## 防失真硬纪律
 
 `N=几` 必须显式标注；未验证假设与边界必须写在产出里；口语数字标 `(口语待核)` 且不推算；公式默认值 `⚪` 不能冒充真据 `🟢`；无金卡不虚报。
