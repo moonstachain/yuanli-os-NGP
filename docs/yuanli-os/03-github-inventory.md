@@ -137,10 +137,12 @@ Mechanism    生成     × 选择     × 继承/进化
 | 仓库 | 类型 | 说明 |
 |---|---|---|
 | `yuanli-os-NGP` | fork of `archestra-ai/archestra` | **本仓库**。Enterprise AI Platform：guardrails / MCP registry / gateway / orchestrator。是原力OS-MCP 走向生产的候选基础设施 |
-| `gbrain-yuanli` | 自建 | gbrain 钉版镜像（v0.42.53 + yuanli 3 本地补丁）— 升级窗重放基线。对应 `GBrain / Retrieval Projection` 层 |
+| `gbrain-yuanli` | 自建 | gbrain 钉版镜像（v0.42.53 + yuanli 3 本地补丁）— 升级窗重放基线。对应 `GBrain / Retrieval Projection` 层。**公开完整实现**：PGLite + embedding + hybrid search + `graph-query` + `gbrain serve` MCP（`127.0.0.1:3131`），`gbrain sync` 把 vault 当 source repo 同步进 `~/.gbrain`。是 `yuanli-os-quickstart` 当前主推的知识调用路径 |
+| `yuanli-strategy-web` | 自建 | 前台站点，但 `src/data/estate.ts` 是一份**公开可读的 estate 数据投影**——含 `llm-wiki` 的 `primaryRole` / `upstream` / `semanticStatus` 等法权字段。是少数能在公开侧交叉验证 Estate 法权的材料 |
 | `yuanli-invest-vnpy` | fork | Python 量化交易框架，投研 Runtime 侧 |
 | `yuanli-os-agent-team` | fork (claude-flow) | 多 agent 编排平台 |
 | `yuanli-interface-skills` | fork，**已归档** | 人机共创基建 |
+| `moonstachain-yuanli-reader-gateway` | 自建 | **⚠️ 容易误认**：这是 **USB 设备控制网关（YOS-READER0）**，**不是** YOS-BRAIN 里那个 `Remote Read Gateway`（wiki 远程读取投影）。后者在 90 个公开仓里零匹配，目前无公开实现 |
 
 > 注意 `yuanli-os-NGP` 与原力OS 的关系：它是 **Runtime 候选**，不是 C1–C4 的实现。
 > 按 YOS-MCP1-G0 的边界，生产 MCP 尚未上线；WRITE / ACT 未授权。
@@ -158,7 +160,7 @@ Mechanism    生成     × 选择     × 继承/进化
 | `clone-alpha` | 活跃度低（2026-03） | 原力OS 克隆体 Alpha，多机部署实验。含 clone-state 心跳/评分/晋升策略、5 个 workflow、飞书 bridge |
 | `yuan-li-os-clone-01` | **ARCHIVED** | 克隆体实验第一版 |
 | `yuanli-os-quickstart` | 2026-07-09 | 面向企业家的 docsify 上手站。四句话定位："记住 / 回答（带出处）/ 发现 / 增值" |
-| `yuanli-os-company-brain-skill` | **ARCHIVED** | Company Brain v0.1，Sentra 式记忆系统：right-time surface + 三圈边界 + typed edges + 抗幻觉 |
+| `yuanli-os-company-brain-skill` | **ARCHIVED** | Company Brain v0.1，Sentra 式记忆系统：right-time surface + 三圈边界 + typed edges + 抗幻觉。**T2 侧最重要的公开实现仓**：4-layer 写权限 schema、`wiki_git_mirror_sync.sh` 单向镜像、`relationship_graph.py` typed edges、`wiki_lint_l10.py` frontmatter lint、`brain_surface_hook.py` 右时召回。详见 `05-llm-wiki-t2-semantic-truth.md` |
 | `yuanli-os-dashboard` | **ARCHIVED** | 原力OS 信息系统全景仪表盘 |
 | `yuanli-os-greenbook` | **ARCHIVED** | 八万四千-OS-管培孵化绿皮书 · 4 部 55 章，碳基(x·y) → 硅基(ʸx) 跃迁路径 |
 
