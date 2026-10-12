@@ -6,6 +6,17 @@
 
 **ALWAYS run all commands from the `platform/` directory unless specifically instructed otherwise.**
 
+## Cursor Cloud specific instructions
+
+Cloud Agent VMs do not run Tilt or a local Kubernetes cluster. The environment start script brings up PostgreSQL 16, applies Drizzle migrations, and starts the dev servers. Project Node.js is `/usr/local/bin/node` (v24.11.1) and pnpm is 10.33.0. Prefix `/usr/local/bin` on `PATH` before project commands, because the agent runtime `node` can appear earlier.
+
+- Frontend: http://127.0.0.1:3000
+- Backend: http://127.0.0.1:9000 (`/health` and `/ready`)
+- Database: `postgresql://archestra@127.0.0.1:5432/archestra_dev` (password is `ARCHESTRA_DATABASE_URL` in `.env`, copied from `.env.example` on first boot)
+- Admin login: `ARCHESTRA_AUTH_ADMIN_EMAIL` / `ARCHESTRA_AUTH_ADMIN_PASSWORD` in `.env`
+
+A Kubernetes connection error in the backend log is expected here. The API and UI still run. Local MCP server pods need a cluster, which this environment does not provide.
+
 ## Important Rules
 
 1. **Use pnpm** for package management
